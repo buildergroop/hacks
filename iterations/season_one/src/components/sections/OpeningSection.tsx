@@ -4,16 +4,17 @@ import { Navbar } from "../ui/Navbar";
 
 export const OpeningSection = () => {
   return (
-    <div className="p-[2rem] w-screen openingSectionBackground flex flex-col gap-[5rem]">
+    <div className="transition-all p-[2rem] h-screen 2xl:h-auto w-screen openingSectionBackground flex flex-col justify-between 2xl:gap-[5rem]">
       <Navbar />
       <Content />
+      footer
     </div>
   );
 };
 
 const Content = () => {
   return (
-    <div className="w-full">
+    <div className="w-full -mt-5">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
           <h1 className="font-black text-[4.5rem] leading-[1.2] tracking-[-0.035em]">
