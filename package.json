@@ -1,5 +1,6 @@
 {
     "name": "builderhacks",
     "description": "The various iterations for BuilderHacks websites.",
-    "private": false
+    "private": false,
+    "license": "Apache-2.0"
 }
