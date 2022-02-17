@@ -22,6 +22,8 @@ export const Button: React.FC<ButtonProps> = ({
         grid place-items-center
         cursor-pointer
         hover:bg-opacity-80
+        transition-all
+        
         ${width}
         ${rounded === "sm" && "rounded-sm"}
         ${rounded === "md" && "rounded-md"}

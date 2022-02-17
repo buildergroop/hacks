@@ -26,7 +26,13 @@ const Content = () => {
           </p>
         </div>
         <div className="flex items-center gap-5">
-          <Button width="w-[14rem]" color="light" rounded="full" size="xl">
+          <Button
+            width="w-[14rem]"
+            color="light"
+            rounded="full"
+            size="xl"
+            className="hover:w-[16rem] hover:h-[3.2rem]"
+          >
             <h2 className="text-dark-main text-[1.1rem] font-extrabold textGradient">
               join hackathon
             </h2>
