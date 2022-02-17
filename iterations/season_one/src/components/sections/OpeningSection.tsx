@@ -4,7 +4,7 @@ import { Navbar } from "../ui/Navbar";
 
 export const OpeningSection = () => {
   return (
-    <div className="transition-all p-[2rem] h-screen 2xl:h-auto w-screen openingSectionBackground flex flex-col justify-between 2xl:gap-[5rem]">
+    <div className="transition-all p-[2rem] min-h-screen 2xl:h-auto w-screen openingSectionBackground flex flex-col justify-between 2xl:gap-[5rem]">
       <Navbar />
       <Content />
       footer
