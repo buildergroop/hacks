@@ -15,4 +15,22 @@ body,
 
 /* custom css here */
 
+.openingSectionBackground {
+  background-image: url("/OpeningSectionBackground.png");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.textGradient {
+  background: radial-gradient(
+    92.35% 247.64% at 97.49% 2.65%,
+    #148eff 0%,
+    #3965ff 60.56%,
+    #7b4cff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @import "tailwindcss/utilities";
