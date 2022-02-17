@@ -1,11 +1,16 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap");
+
 html,
 body,
 #__next {
   height: 100vh;
   width: 100vw;
+
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
 }
 
 /* custom css here */
