@@ -5,10 +5,12 @@ import { Navbar } from "../ui/Navbar";
 
 export const OpeningSection = () => {
   return (
-    <div className="transition-all p-[3rem] min-h-screen w-screen 2xl:min-h-[auto] 2xl:gap-[10rem] openingSectionBackground flex flex-col justify-between">
-      <Navbar />
-      <Content />
-      <Sponsor />
+    <div className="openingSectionBackground transition-all w-screen">
+      <div className="p-[3rem] min-h-screen 2xl:min-h-[auto] flex flex-col justify-between 2xl:gap-[10rem]">
+        <Navbar />
+        <Content />
+        <Sponsor />
+      </div>
     </div>
   );
 };
@@ -54,3 +56,5 @@ const Sponsor = () => {
     </div>
   );
 };
+
+const Cards = () => {};
