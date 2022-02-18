@@ -23,6 +23,7 @@ export const Button: React.FC<ButtonProps> = ({
         cursor-pointer
         hover:bg-opacity-80
         transition-all
+        select-none 
         
         ${width}
         ${rounded === "sm" && "rounded-sm"}

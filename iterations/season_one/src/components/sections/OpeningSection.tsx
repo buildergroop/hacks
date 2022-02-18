@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "../ui/Button";
+import { Link } from "../ui/Link";
 import { Navbar } from "../ui/Navbar";
 
 export const OpeningSection = () => {
   return (
-    <div className="transition-all p-[2rem] min-h-screen w-screen 2xl:min-h-[auto] 2xl:gap-[10rem] openingSectionBackground flex flex-col justify-between">
+    <div className="transition-all p-[3rem] min-h-screen w-screen 2xl:min-h-[auto] 2xl:gap-[10rem] openingSectionBackground flex flex-col justify-between">
       <Navbar />
       <Content />
       footer
@@ -38,9 +39,7 @@ const Content = () => {
               join hackathon
             </h2>
           </Button>
-          <a className="text-light-main font-bold cursor-pointer text-[1.1rem]">
-            learn more
-          </a>
+          <Link title="learn more" />
         </div>
       </div>
     </div>
