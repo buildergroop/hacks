@@ -6,7 +6,7 @@ interface LinkProps {
 export const Link: React.FC<LinkProps> = ({ title, isActive = false }) => {
   return (
     <a
-      className={`transition-all text-[1rem] font-semibold tracking-wider hover:opacity-80 cursor-pointer ${
+      className={`transition-all text-[1rem] font-medium tracking-[0.08em] hover:opacity-80 cursor-pointer ${
         isActive && ""
       }`}
     >
