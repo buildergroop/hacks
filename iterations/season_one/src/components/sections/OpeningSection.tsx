@@ -8,7 +8,7 @@ export const OpeningSection = () => {
     <div className="transition-all p-[3rem] min-h-screen w-screen 2xl:min-h-[auto] 2xl:gap-[10rem] openingSectionBackground flex flex-col justify-between">
       <Navbar />
       <Content />
-      footer
+      <Sponsor />
     </div>
   );
 };
@@ -42,6 +42,15 @@ const Content = () => {
           <Link title="learn more" />
         </div>
       </div>
+    </div>
+  );
+};
+
+const Sponsor = () => {
+  return (
+    <div className="flex items-center gap-1">
+      <h3 className="font-semibold text-[1.3rem]">In collaboration with</h3>
+      <img src="/LambdatestLogo.png" alt="" className="mt-2" />
     </div>
   );
 };
