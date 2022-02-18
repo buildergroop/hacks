@@ -1,5 +1,5 @@
 import React from "react";
-import { OpeningSection } from "~/components/sections/OpeningSection";
+import { OpeningSection } from "~/components/parts/OpeningSection";
 
 export default function Home() {
   return (

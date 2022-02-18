@@ -1,11 +1,13 @@
 import React from "react";
-import { Button } from "../ui/Button";
-import { Link } from "../ui/Link";
-import { Navbar } from "../ui/Navbar";
+import { Button } from "../common/Button";
+import { Link } from "../common/Link";
+import { Navbar } from "./Navbar";
+import { OpeningCard } from "./OpeningCard";
 
 export const OpeningSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen">
+    <div className="openingSectionBackground transition-all w-screen flex">
+      <CardsGraphic />
       <div className="p-[3rem] min-h-screen 2xl:min-h-[auto] flex flex-col justify-between 2xl:gap-[10rem]">
         <Navbar />
         <Content />
@@ -57,4 +59,19 @@ const Sponsor = () => {
   );
 };
 
-const Cards = () => {};
+const CardsGraphic = () => {
+  return (
+    <div className="flex h-full w-[30%]">
+      <div className="flex flex-col h-full w-[50%]">
+        <OpeningCard type="graphic" />
+        <OpeningCard type="informational" />
+        <OpeningCard type="graphic" />
+      </div>
+      <div className="flex flex-col h-full w-[50%]">
+        <OpeningCard type="informational" />
+        <OpeningCard type="graphic" />
+        <OpeningCard type="informational" />
+      </div>
+    </div>
+  );
+};
