@@ -28,7 +28,12 @@ export const OpeningCard: React.FC<OpeningCardProps> = ({
     >
       {type === "graphic" ? (
         <div className="relative h-full">
-          <img src={graphic} alt="character" className="absolute bottom-0" />
+          <img
+            src={graphic}
+            alt="character"
+            className="absolute bottom-0"
+            draggable={false}
+          />
         </div>
       ) : (
         <div className="flex flex-col justify-between p-6 h-full">
