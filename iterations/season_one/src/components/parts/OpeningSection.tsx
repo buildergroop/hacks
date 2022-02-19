@@ -4,11 +4,13 @@ import { Link } from "../common/Link";
 import { Navbar } from "./Navbar";
 import { OpeningCard } from "./OpeningCard";
 
+import { BsPeopleFill, BsCalendarFill, BsTrophyFill } from "react-icons/bs";
+
 export const OpeningSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen flex">
+    <div className="openingSectionBackground transition-all w-screen flex overflow-x-hidden">
       <CardsGraphic />
-      <div className="p-[3rem] min-h-screen 2xl:min-h-[auto] flex flex-col justify-between 2xl:gap-[10rem]">
+      <div className="p-[3rem] min-h-screen 2xl:min-h-[auto] flex flex-col justify-between 2xl:gap-[10rem] ml-10">
         <Navbar />
         <Content />
         <Sponsor />
@@ -61,16 +63,30 @@ const Sponsor = () => {
 
 const CardsGraphic = () => {
   return (
-    <div className="flex h-full w-[30%]">
+    <div className="flex min-h-screen 2xl:min-h-[auto] w-[35%]">
       <div className="flex flex-col h-full w-[50%]">
-        <OpeningCard type="graphic" />
-        <OpeningCard type="informational" />
-        <OpeningCard type="graphic" />
+        <OpeningCard type="graphic" graphic="/Character/Badrun.png" />
+        <OpeningCard
+          type="informational"
+          content="25th to 27th Feb"
+          icon={<BsCalendarFill className="h-[4rem] w-[4rem]" />}
+        />
+        <OpeningCard type="graphic" graphic="/Character/Marni.png" />
       </div>
       <div className="flex flex-col h-full w-[50%]">
-        <OpeningCard type="informational" />
-        <OpeningCard type="graphic" />
-        <OpeningCard type="informational" />
+        <OpeningCard
+          type="informational"
+          subheading="of prizes"
+          content="$5000"
+          icon={<BsTrophyFill className="h-[4rem] w-[4rem]" />}
+        />
+        <OpeningCard type="graphic" graphic="/Character/Ikbal.png" />
+        <OpeningCard
+          type="informational"
+          subheading="registrations"
+          content="100+"
+          icon={<BsPeopleFill className="h-[4rem] w-[4rem]" />}
+        />
       </div>
     </div>
   );

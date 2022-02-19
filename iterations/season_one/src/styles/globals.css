@@ -31,4 +31,8 @@ body,
   -webkit-text-fill-color: transparent;
 }
 
+.backdropFilter {
+  backdrop-filter: blur(26.7494px);
+}
+
 @import "tailwindcss/utilities";
