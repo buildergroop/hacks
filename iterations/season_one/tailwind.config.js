@@ -5,10 +5,12 @@ module.exports = {
   theme: {
     colors: {
       dark: {
-        main: "#121313"
+        main: "#121313",
+        secondary: "#5A5A5A",
       },
       light: {
-        main: "#FFFFFF"
+        main: "#FFFFFF",
+        secondary: "#DBDBDB",
       }
     }
   },

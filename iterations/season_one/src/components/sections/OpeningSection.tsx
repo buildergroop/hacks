@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "../common/Button";
 import { Link } from "../common/Link";
-import { Navbar } from "./Navbar";
-import { OpeningCard } from "./OpeningCard";
+import { Navbar } from "../parts/Navbar";
+import { OpeningCard } from "../parts/OpeningCard";
 
 import { BsPeopleFill, BsCalendarFill, BsTrophyFill } from "react-icons/bs";
 

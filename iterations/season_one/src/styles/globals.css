@@ -14,7 +14,7 @@ body,
 /* custom css here */
 
 .openingSectionBackground {
-  background-image: url("/OpeningSectionBackground.png");
+  background: url("/OpeningSectionBackground.png");
   background-size: cover;
   background-repeat: repeat;
 }
