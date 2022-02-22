@@ -16,6 +16,7 @@ module.exports = {
         main: "#3246FF",
         inverse: "#FFFFFF",
         secondaryLight: "#D7E2FF",
+        tertiaryLight: "#ECF3FF",
       }
     }
   },
