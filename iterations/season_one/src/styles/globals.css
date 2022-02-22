@@ -35,4 +35,8 @@ body,
   backdrop-filter: blur(26.7494px);
 }
 
+.prizeBoxShadow {
+  box-shadow: 0px 0px 68px 0px #0000001f;
+}
+
 @import "tailwindcss/utilities";

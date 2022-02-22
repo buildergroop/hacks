@@ -3,7 +3,7 @@ import React from "react";
 export const AboutSection = () => {
   return (
     <div className="grid place-items-center bg-dark-main text-light-main">
-      <div className="p-[4rem] 2xl:p-0 mx-auto flex flex-col lg:flex-row items-center">
+      <div className="p-[2rem] md:p-[4rem] 2xl:p-0 mx-auto flex flex-col lg:flex-row items-center">
         <h1 className="font-normal text-[2.5rem] xl:text-[3.3rem] 2xl:text-[3.7rem] leading-tight lg:w-[30rem] 2xl:w-[40rem] mb-10 lg:mb-0 lg:mr-[2.5rem]">
           <span className="font-semibold">Buildergroop presents</span> one of
           the largest hackathons <span className="font-semibold"></span>
