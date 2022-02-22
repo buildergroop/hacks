@@ -10,7 +10,7 @@ export const OpeningSection = () => {
   return (
     <div className="openingSectionBackground transition-all w-screen flex overflow-x-hidden">
       <CardsGraphic />
-      <div className="p-[3rem] min-h-screen 2xl:min-h-[auto] flex flex-col justify-between 2xl:gap-[10rem] ml-10">
+      <div className="p-[3rem] flex flex-col justify-between lg:min-h-screen 2xl:min-h-[auto] gap-[3rem] lg:gap-[0] 2xl:gap-[10rem] ml-10">
         <Navbar />
         <Content />
         <Sponsor />
@@ -24,7 +24,7 @@ const Content = () => {
     <div className="w-full -mt-5">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="font-extrabold text-[5rem] leading-[1.1] tracking-[0.005em]">
+          <h1 className="font-extrabold text-[3rem] md:text-[4rem] lg:text-[4.5rem] 2xl:text-[5rem] leading-[1.1] tracking-[0.005em]">
             Members of Gen-Z, <br /> Let's Get Hacking.
           </h1>
           <p className="text-[1.3rem] md:max-w-[35rem] font-light">

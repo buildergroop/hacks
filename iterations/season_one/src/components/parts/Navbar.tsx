@@ -37,7 +37,7 @@ const NavLinks = ({ activeLink = "" }) => {
   ];
 
   return (
-    <div className="flex items-center gap-5">
+    <div className="hidden 2xl:flex items-center gap-5">
       {links.map((link) => {
         return <Link title={link.title} isActive={activeLink === link.title} />;
       })}

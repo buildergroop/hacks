@@ -39,7 +39,7 @@ export const OpeningCard: React.FC<OpeningCardProps> = ({
         <div className="flex flex-col justify-between p-6 h-full">
           <div className="">{icon}</div>
           <div className="flex flex-col">
-            <h1 className="font-semibold text-[3rem] tracking-wide leading-[3rem]">
+            <h1 className="font-semibold text-[1rem] lg:text-[2rem] 2xl:text-[3rem] tracking-wide 2xl:leading-[3rem]">
               {content}
             </h1>
             <h3 className="font-regular text-[1.4rem]">{subheading}</h3>
