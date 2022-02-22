@@ -2,8 +2,8 @@ import React from "react";
 
 export const PrizesSection = () => {
   return (
-    <div className="h-screen lggrid place-items-center bg-light-main text-dark-main">
-      <div className="p-[2rem] md:p-[4rem] 2xl:p-0 mx-auto flex flex-col items-center gap-[7rem]">
+    <div className="lg:grid place-items-center bg-light-main text-dark-main">
+      <div className="p-[2rem] md:p-[4rem] mx-auto flex flex-col items-center gap-[7rem]">
         <h1 className="text-theme-main font-extrabold text-[3rem] text-accent-main">
           Grand Prizes
         </h1>

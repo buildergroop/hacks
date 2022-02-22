@@ -56,7 +56,9 @@ const Sponsor = () => {
   return (
     <div className="flex flex-col md:flex-row md:items-center gap-1">
       <h3 className="font-medium text-[1.3rem]">In collaboration with</h3>
-      <img src="/LambdatestLogo.png" alt="" className="mt-2" />
+      <a href="https://lambdatest.com">
+        <img src="/LambdatestLogo.png" alt="" className="mt-2" />
+      </a>
     </div>
   );
 };
