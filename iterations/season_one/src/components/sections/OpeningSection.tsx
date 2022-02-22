@@ -10,7 +10,7 @@ export const OpeningSection = () => {
   return (
     <div className="openingSectionBackground transition-all w-screen flex overflow-x-hidden">
       <CardsGraphic />
-      <div className="p-[3rem] flex flex-col justify-between lg:min-h-screen 2xl:min-h-[auto] gap-[3rem] lg:gap-[0] 2xl:gap-[10rem] ml-10">
+      <div className="w-full py-[2rem] md:p-[3rem] flex flex-col justify-between lg:min-h-screen 2xl:min-h-[auto] gap-[5rem] lg:gap-[0] 2xl:gap-[10rem] ml-10">
         <Navbar />
         <Content />
         <Sponsor />
@@ -21,10 +21,10 @@ export const OpeningSection = () => {
 
 const Content = () => {
   return (
-    <div className="w-full -mt-5">
+    <div className="w-full lg:-mt-5">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
-          <h1 className="font-extrabold text-[3rem] md:text-[4rem] lg:text-[4.5rem] 2xl:text-[5rem] leading-[1.1] tracking-[0.005em]">
+          <h1 className="font-extrabold text-[3rem] md:text-[3.8rem] lg:text-[4.2rem] xl:text-[4.6rem] 2xl:text-[5rem] leading-[1.1] tracking-[0.005em]">
             Members of Gen-Z, <br /> Let's Get Hacking.
           </h1>
           <p className="text-[1.3rem] md:max-w-[35rem] font-light">
@@ -54,7 +54,7 @@ const Content = () => {
 
 const Sponsor = () => {
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex flex-col md:flex-row md:items-center gap-1">
       <h3 className="font-medium text-[1.3rem]">In collaboration with</h3>
       <img src="/LambdatestLogo.png" alt="" className="mt-2" />
     </div>
@@ -63,7 +63,7 @@ const Sponsor = () => {
 
 const CardsGraphic = () => {
   return (
-    <div className="flex min-h-screen 2xl:min-h-[auto] w-[35%]">
+    <div className="hidden lg:flex lg:min-h-screen 2xl:min-h-[auto] w-[60%]">
       <div className="flex flex-col h-full w-[50%]">
         <OpeningCard type="graphic" graphic="/Character/Badrun.png" />
         <OpeningCard
