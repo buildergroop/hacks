@@ -2,7 +2,7 @@ import React from "react";
 
 export const BuilderhacksLogo = () => {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 -mt-2">
       <h1 className="font-extrabold text-[1.3rem] tracking-wider">
         BUILDERGROOP
       </h1>

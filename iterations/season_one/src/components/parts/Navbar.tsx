@@ -1,11 +1,12 @@
 import React from "react";
 import { BuilderhacksLogo } from "../common/Logo";
+import { Countdown } from "./Countdown";
 
 export const Navbar = () => {
   return (
-    <div className="flex items-center justify-between py-3 px-2 select-none">
+    <div className="flex items-center justify-between py-3 px-10 select-none">
       <BuilderhacksLogo />
-      <div className=""></div>
+      <Countdown days={20} hours={12} minutes={30} seconds={30} />
     </div>
   );
 };
