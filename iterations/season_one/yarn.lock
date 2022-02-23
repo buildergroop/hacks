@@ -665,6 +665,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-compound-timerv2@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-compound-timerv2/-/react-compound-timerv2-2.0.0.tgz#58ff2c9f80fc7c4bc3abc4f244f9265d26760067"
+  integrity sha512-QQq7DFthP1YOjsY3NQ8VNfcE9OZbqSb9xEVMU94y5wpJLFs8333B3dm8yVPbKvXCmXy4SYBCnbtCsmgQW+kuhA==
+
 react-dom@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"

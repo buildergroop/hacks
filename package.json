@@ -2,5 +2,8 @@
     "name": "builderhacks",
     "description": "The various iterations for BuilderHacks websites.",
     "private": false,
-    "license": "Apache-2.0"
+    "license": "Apache-2.0",
+    "dependencies": {
+        "react-countdown": "^2.3.2"
+    }
 }
