@@ -19,6 +19,12 @@ body,
   background-repeat: repeat;
 }
 
+.dottedBackgroundLight {
+  background: url("/DottedBackground.png"), #ffffff;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
 .textGradient {
   background: radial-gradient(
     92.35% 247.64% at 97.49% 2.65%,

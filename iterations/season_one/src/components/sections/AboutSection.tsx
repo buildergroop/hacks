@@ -1,19 +1,24 @@
 import React from "react";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { FaBrain } from "react-icons/fa";
+import { GiTrophy } from "react-icons/gi";
 
 export const AboutSection = () => {
   return (
-    <div className="grid place-items-center bg-light-main text-dark-main">
-      <div className="p-[2rem] md:p-[4rem] 2xl:p-0 mx-auto flex flex-col lg:flex-row items-center">
-        <h1 className="font-normal text-[2.5rem] xl:text-[3.3rem] 2xl:text-[3.7rem] leading-tight lg:w-[30rem] 2xl:w-[40rem] mb-10 lg:mb-0 lg:mr-[2.5rem]">
+    <div className="grid place-items-center text-dark-main dottedBackgroundLight">
+      <div className="p-[2rem] md:p-[4rem] mx-auto flex flex-col items-center 2xl:w-[80rem]">
+        <h1 className="font-normal text-[2.5rem] xl:text-[3.3rem] 2xl:text-[3.7rem] leading-tight mb-10 mx-auto">
           <span className="font-semibold">Buildergroop presents</span> one of
           the largest hackathons <span className="font-semibold"></span>
           <span className="font-semibold">exclusive to the youth.</span> Join us
           and hack to your hearts fullest content.
         </h1>
-        <div className="flex flex-col gap-10 lg:w-[30rem] 2xl:w-[40rem] lg:ml-[3.5rem]">
+        <div className="flex gap-10">
           <InfoCard
-            title="Meet Like-Minded Gen-Z’s"
-            gradient="radial-gradient(108.12% 276.78% at -4.3% 100%, #4F75FF 0%, #E22DFF 100%)"
+            title="Connect."
+            background="bg-pink"
+            textColor="text-pink"
+            Icon={BsFillPeopleFill}
           >
             The first edition of BuilderHacks will be a{" "}
             <span className="font-medium">golden opportunity</span> to make
@@ -21,8 +26,10 @@ export const AboutSection = () => {
           </InfoCard>
 
           <InfoCard
-            title="Learn Great Technologies"
-            gradient="radial-gradient(143.8% 212.38% at 5.95% 116.18%, #D718F6 0%, #FF5F7C 53.17%, #FFBA34 100%)"
+            title="Learn."
+            background="bg-blue"
+            textColor="text-blue"
+            Icon={FaBrain}
           >
             Participate in a{" "}
             <span className="font-medium">number of workshops</span> hosted
@@ -30,8 +37,10 @@ export const AboutSection = () => {
           </InfoCard>
 
           <InfoCard
-            title="Win Awesome Prizes"
-            gradient="radial-gradient(100% 255.99% at 0% 100%, #4ED4FF 0%, #46F0A9 27.98%, #9CF963 100%)"
+            title="Win."
+            background="bg-purple"
+            textColor="text-purple"
+            Icon={GiTrophy}
           >
             Get Macbooks, Airpods, keyboards, merch from great companies, and
             much more from our prize pool
@@ -45,24 +54,28 @@ export const AboutSection = () => {
 
 interface InfoCardProps {
   title: string;
-  gradient: string;
+  textColor: string;
+  background: string;
+  Icon: any;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ title, children, gradient }) => {
+const InfoCard: React.FC<InfoCardProps> = ({
+  title,
+  children,
+  textColor,
+  background,
+  Icon,
+}) => {
   return (
-    <div className="flex flex-col gap-1 text-[1.5rem]">
-      <h1
-        className="font-medium"
-        style={{
-          background: gradient,
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
-      >
-        {title}
-      </h1>
-      <p className="font-thin text-dark-secondary">{children}</p>
+    <div
+      className={`flex flex-col gap-4 ${background} bg-opacity-[13%] p-7 rounded-xl w-[33%]`}
+      style={{ boxShadow: "0px 0px 60px 0px #E9E9E9" }}
+    >
+      <Icon className={`${textColor} h-[2.5rem] w-[2.5rem]`} />
+      <div className="flex flex-col gap-1">
+        <h1 className={`font-bold text-[1.5rem] ${textColor}`}>{title}</h1>
+        <p className="text-dark-secondary text-[1rem]">{children}</p>
+      </div>
     </div>
   );
 };

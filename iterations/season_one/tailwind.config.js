@@ -17,7 +17,10 @@ module.exports = {
         inverse: "#FFFFFF",
         secondaryLight: "#D7E2FF",
         tertiaryLight: "#ECF3FF",
-      }
+      },
+      pink: "#A67CFF",
+      purple: "#4E75FF",
+      blue: "#52B6FF",
     }
   },
   variants: {
