@@ -1,16 +1,18 @@
 import React from "react";
 import { AboutSection } from "~/components/sections/AboutSection";
-import { FooterSection } from "~/components/sections/FooterSection";
+import { FAQSection } from "~/components/sections/FAQSection";
 import { OpeningSection } from "~/components/sections/OpeningSection";
-import { PrizesSection } from "~/components/sections/PrizesSection";
+// import { FooterSection } from "~/components/sections/FooterSection";
+// import { PrizesSection } from "~/components/sections/PrizesSection";
 
 export default function Home() {
   return (
     <div className="w-screen">
       <OpeningSection />
       <AboutSection />
-      <PrizesSection />
-      <FooterSection />
+      <FAQSection />
+      {/* <PrizesSection /> */}
+      {/* <FooterSection /> */}
     </div>
   );
 }

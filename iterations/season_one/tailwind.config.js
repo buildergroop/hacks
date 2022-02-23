@@ -11,6 +11,7 @@ module.exports = {
       light: {
         main: "#FFFFFF",
         secondary: "#DBDBDB",
+        tertiary: "#F0F5F9",
       },
       accent: {
         main: "#3246FF",
