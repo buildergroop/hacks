@@ -7,7 +7,7 @@ export const PrizesSection = () => {
         <h1 className="text-theme-main font-extrabold text-[3rem] text-accent-main">
           Grand Prizes
         </h1>
-        <div className="flex flex-col lg:flex-row items-center gap-4">
+        <div className="flex flex-col lg:flex-row items-center gap-10">
           <PrizeCard
             place={2}
             prizeName="Apple Watch (Series 7)"
