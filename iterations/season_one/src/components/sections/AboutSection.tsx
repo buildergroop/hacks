@@ -35,16 +35,49 @@ export const AboutSection = () => {
             </h2>
           </Button>
         </div>
-        <div className="lg:w-[50%]">{/* <InfoCard /> */}</div>
+        <div className="flex flex-col gap-5 lg:w-[30rem] 2xl:w-[40rem] lg:ml-[3.5rem] lg:w-[50%]">
+          <InfoCard title="Connect." background="bg-pink" textColor="text-pink">
+            The first edition of BuilderHacks will be a{" "}
+            <span className="font-medium">golden opportunity</span> to make
+            friends in your generation that have similar interests.
+          </InfoCard>
+
+          <InfoCard title="Learn." background="bg-blue" textColor="text-blue">
+            Participate in a{" "}
+            <span className="font-medium">number of workshops</span> hosted
+            during the course of the hackathon and learn vital technologies.
+          </InfoCard>
+
+          <InfoCard title="Win." background="bg-purple" textColor="text-purple">
+            Get Macbooks, Airpods, keyboards, merch from great companies, and
+            much more from our prize pool
+            <span className="font-medium"> worth 5000 USD.</span>
+          </InfoCard>
+        </div>
       </div>
     </div>
   );
 };
 
-const InfoCard = () => {
+interface InfoCardProps {
+  title: string;
+  textColor: string;
+  background: string;
+}
+
+const InfoCard: React.FC<InfoCardProps> = ({
+  title,
+  children,
+  textColor,
+  background,
+}) => {
   return (
-    <div className="bg-accent-main text-accent-inverse bg-opacity-[50%] rounded-xl padding-5 shadow-xl h-full w-full">
-      {/* <h1 className="text-[3rem] font-bold">BuilderHacks Ticket</h1> */}
+    <div
+      className={`flex flex-col gap-1 ${background} bg-opacity-[10%] p-7 rounded-xl`}
+      // style={{ boxShadow: "0px 0px 60px 0px #E9E9E9" }}
+    >
+      <h1 className={`font-bold text-[1.5rem] ${textColor}`}>{title}</h1>
+      <p className="text-dark-secondary text-[1rem]">{children}</p>
     </div>
   );
 };
