@@ -5,7 +5,7 @@ import { GiTrophy } from "react-icons/gi";
 
 export const AboutSection = () => {
   return (
-    <div className="grid place-items-center text-dark-main dottedBackgroundLight">
+    <div className="grid place-items-center text-dark-main dottedBackgroundLight py-[5rem]">
       <div className="p-[2rem] md:p-[4rem] mx-auto flex flex-col items-center 2xl:w-[80rem]">
         <h1 className="font-normal text-[2.5rem] xl:text-[3.3rem] 2xl:text-[3.7rem] leading-tight mb-10 mx-auto">
           <span className="font-semibold">Buildergroop presents</span> one of
