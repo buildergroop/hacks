@@ -1,23 +1,17 @@
 import React from "react";
 import { Button } from "../common/Button";
 import { Navbar } from "../parts/Navbar";
-import { OpeningCard } from "../parts/OpeningCard";
-
-import {
-  BsPeopleFill,
-  BsCalendarFill,
-  BsTrophyFill,
-  BsFillPlayFill,
-} from "react-icons/bs";
+import { BsFillPlayFill } from "react-icons/bs";
 
 export const OpeningSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen overflow-x-hidden p-[2rem] flex flex-col justify-between">
+    <div className="openingSectionBackground transition-all w-screen overflow-x-hidden p-[2rem] flex flex-col justify-between select-none">
       <Navbar />
       <Content />
       <img
         src="/CodeEditor.svg"
         className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
+        draggable="false"
       />
     </div>
   );
@@ -41,7 +35,7 @@ const Content = () => {
             of a lifetime.
           </p>
         </div>
-        <div className="flex items-center mx-auto gap-3">
+        <div className="flex items-center mx-auto gap-3 z-[999]">
           <Button
             width="w-[13.2rem]"
             color="light"
