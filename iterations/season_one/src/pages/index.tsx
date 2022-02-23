@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutSection } from "~/components/sections/AboutSection";
+import { ClosingSection } from "~/components/sections/ClosingSection";
 import { FAQSection } from "~/components/sections/FAQSection";
 import { OpeningSection } from "~/components/sections/OpeningSection";
 // import { FooterSection } from "~/components/sections/FooterSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <OpeningSection />
       <AboutSection />
       <FAQSection />
+      <ClosingSection />
       {/* <PrizesSection /> */}
       {/* <FooterSection /> */}
     </div>
