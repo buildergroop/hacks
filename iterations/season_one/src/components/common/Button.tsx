@@ -4,7 +4,7 @@ interface ButtonProps {
   width: string;
   rounded?: "sm" | "md" | "lg" | "xl" | "full";
   size?: "sm" | "md" | "lg" | "xl";
-  color?: "light" | "dark";
+  color?: "light" | "dark" | "accent";
   className?: string;
 }
 
@@ -39,6 +39,7 @@ export const Button: React.FC<ButtonProps> = ({
 
         ${color === "light" && "bg-light-main"}
         ${color === "dark" && "bg-dark-main"}
+        ${color === "accent" && "bg-accent-main"}
 
         ${className}
         `}
