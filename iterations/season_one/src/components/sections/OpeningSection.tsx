@@ -2,18 +2,29 @@ import React from "react";
 import { Button } from "../common/Button";
 import { Navbar } from "../parts/Navbar";
 import { BsFillPlayFill } from "react-icons/bs";
+import { GiPartyPopper } from "react-icons/gi";
+import { InfoBanner } from "../common/InfoBanner";
 
 export const OpeningSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen overflow-x-hidden p-[2rem] flex flex-col justify-between select-none">
-      <Navbar />
-      <Content />
-      <img
-        src="/CodeEditor.svg"
-        className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
-        draggable="false"
-      />
-      <Sponsor />
+    <div className="openingSectionBackground transition-all w-screen overflow-x-hidden flex flex-col justify-between select-none">
+      <InfoBanner Icon={GiPartyPopper}>
+        Registrations Are Now Open! Click{" "}
+        <a href="" className="font-bold">
+          Here
+        </a>{" "}
+        to Register.
+      </InfoBanner>
+      <div className="flex flex-col justify-between px-[2rem] py-[1rem] w-full">
+        <Navbar />
+        <Content />
+        <img
+          src="/CodeEditor.svg"
+          className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
+          draggable="false"
+        />
+        <Sponsor />
+      </div>
     </div>
   );
 };
@@ -59,14 +70,14 @@ const Content = () => {
 
 const Sponsor = () => {
   return (
-    <div className="flex flex-col items-center gap-4 -mt-16 mx-auto">
+    <div className="flex flex-col items-center gap-4 -mt-16 mx-auto mb-[2rem]">
       <div className="flex items-center gap-3">
         <h3 className="font-medium text-[2rem]">Powered By</h3>
         <a href="https://lambdatest.com">
           <img src="/LambdatestLogo.png" alt="" className="h-[2.6rem]" />
         </a>
       </div>
-      <p className="text-light-secondary text-center md:max-w-[40rem] mx-auto text-[1.2rem] font-medium">
+      <p className="text-light-main text-center md:max-w-[40rem] mx-auto text-[1.2rem] font-thin">
         Perform Automated and Live Interactive Cross Browser Testing on 3000+
         Real Browsers and Operating Systems Online with LambdaTest.
       </p>
