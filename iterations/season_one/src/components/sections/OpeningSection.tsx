@@ -13,6 +13,7 @@ export const OpeningSection = () => {
         className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
         draggable="false"
       />
+      <Sponsor />
     </div>
   );
 };
@@ -58,11 +59,17 @@ const Content = () => {
 
 const Sponsor = () => {
   return (
-    <div className="flex flex-col md:flex-row md:items-center gap-1">
-      <h3 className="font-medium text-[1.3rem]">In collaboration with</h3>
-      <a href="https://lambdatest.com">
-        <img src="/LambdatestLogo.png" alt="" className="mt-2" />
-      </a>
+    <div className="flex flex-col items-center gap-4 -mt-16 mx-auto">
+      <div className="flex items-center gap-3">
+        <h3 className="font-medium text-[2rem]">Powered By</h3>
+        <a href="https://lambdatest.com">
+          <img src="/LambdatestLogo.png" alt="" className="h-[2.6rem]" />
+        </a>
+      </div>
+      <p className="text-light-secondary text-center md:max-w-[40rem] mx-auto text-[1.2rem] font-medium">
+        Perform Automated and Live Interactive Cross Browser Testing on 3000+
+        Real Browsers and Operating Systems Online with LambdaTest.
+      </p>
     </div>
   );
 };
