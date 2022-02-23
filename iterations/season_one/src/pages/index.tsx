@@ -3,7 +3,7 @@ import { AboutSection } from "~/components/sections/AboutSection";
 import { ClosingSection } from "~/components/sections/ClosingSection";
 import { FAQSection } from "~/components/sections/FAQSection";
 import { OpeningSection } from "~/components/sections/OpeningSection";
-// import { FooterSection } from "~/components/sections/FooterSection";
+import { FooterSection } from "~/components/sections/FooterSection";
 // import { PrizesSection } from "~/components/sections/PrizesSection";
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
       <AboutSection />
       <FAQSection />
       <ClosingSection />
+      <FooterSection />
       {/* <PrizesSection /> */}
-      {/* <FooterSection /> */}
     </div>
   );
 }
