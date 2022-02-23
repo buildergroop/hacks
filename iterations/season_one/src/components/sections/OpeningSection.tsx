@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../common/Button";
-import { Link } from "../common/Link";
 import { Navbar } from "../parts/Navbar";
 import { OpeningCard } from "../parts/OpeningCard";
 
@@ -8,44 +7,40 @@ import { BsPeopleFill, BsCalendarFill, BsTrophyFill } from "react-icons/bs";
 
 export const OpeningSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen flex overflow-x-hidden">
-      <CardsGraphic />
-      <div className="w-full py-[2rem] md:p-[3rem] flex flex-col justify-between lg:min-h-screen 2xl:min-h-[auto] gap-[5rem] lg:gap-[0] 2xl:gap-[10rem] ml-10">
-        <Navbar />
-        <Content />
-        <Sponsor />
-      </div>
+    <div className="openingSectionBackground transition-all w-screen overflow-x-hidden py-[2rem] md:p-[3rem] flex flex-col justify-between h-screen">
+      <Navbar />
+      <Content />
+      <div className=""></div>
     </div>
   );
 };
 
 const Content = () => {
   return (
-    <div className="w-full lg:-mt-5">
+    <div className="w-full lg:-mt-5 grid place-items-center">
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <h1 className="font-extrabold text-[3rem] md:text-[3.8rem] lg:text-[4.2rem] xl:text-[4.6rem] 2xl:text-[5rem] leading-[1.1] tracking-[0.005em]">
+        <div className="flex flex-col gap-4 text-center">
+          <h1 className="font-extrabold text-[2.8rem] md:text-[3.6rem] lg:text-[4rem] xl:text-[4.4rem] 2xl:text-[4.8rem] leading-[1.1] tracking-[0.005em]">
             Members of Gen-Z, <br /> Let's Get Hacking.
           </h1>
-          <p className="text-[1.3rem] md:max-w-[35rem] font-light">
+          <p className="text-[1.3rem] font-light">
             Meet the first edition of BuilderHacks, The world's biggest Gen-Z
             hackathon with over{" "}
             <span className="font-extrabold">$5000 USD</span> in prizes.
           </p>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center mx-auto">
           <Button
-            width="w-[13rem]"
+            width="w-[14rem]"
             color="light"
-            rounded="full"
+            rounded="xl"
             size="xl"
             className="hover:w-[16rem] hover:h-[3.2rem]"
           >
-            <h2 className="text-dark-main text-[1.21rem] font-medium textGradient">
+            <h2 className="text-dark-main text-[1.21rem] font-bold">
               join hackathon
             </h2>
           </Button>
-          <Link title="learn more" />
         </div>
       </div>
     </div>

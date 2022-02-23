@@ -1,0 +1,21 @@
+{
+    "name": "BuilderHacks",
+    "edition": "Season One - Winter Edition",
+    "when": "Friday, 25th February 2022 - 9PM EST",
+    "where": "Zoom & Buildergroop Discord",
+    "duration": "36 Hours",
+    "sponsor": {
+        "name": "LambdaTest",
+        "website": "https://lambdatest.com"
+    },
+    "prizes": {
+        "total_prize_value": "$5000 USD",
+        "first_place": "M1 Macbook Air 2022 (2x) OR M1 Macbook Pro 2022 (1x)",
+        "second_place": "Apple Watch Series 7 AND Airpods (3rd Generation)",
+        "third_place": "Razer Huntsman Elite Keyboard AND Razer Kraken Headphones",
+        "runner_up": "1 Year Of Discord Nitro AND Wumpus Plushie"
+    },
+    "participants": 200,
+    "teams": 69,
+    "participants_allowed_per_team": "2"
+}

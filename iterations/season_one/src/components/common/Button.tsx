@@ -2,7 +2,7 @@ import React from "react";
 
 interface ButtonProps {
   width: string;
-  rounded?: "sm" | "md" | "lg" | "full";
+  rounded?: "sm" | "md" | "lg" | "xl" | "full";
   size?: "sm" | "md" | "lg" | "xl";
   color?: "light" | "dark";
   className?: string;
@@ -29,6 +29,7 @@ export const Button: React.FC<ButtonProps> = ({
         ${rounded === "sm" && "rounded-sm"}
         ${rounded === "md" && "rounded-md"}
         ${rounded === "lg" && "rounded-lg"}
+        ${rounded === "xl" && "rounded-xl"}
         ${rounded === "full" && "rounded-full"}
 
         ${size === "sm" && "h-[2rem] px-2"}
