@@ -38,13 +38,13 @@ export const PrizesSection = () => {
           />
           <PrizeCard
             place={5}
-            prizeName="Server Role"
+            prizeName="Discord Server Role"
             subheading="Get a special role in the Buildergroop Discord for being a Runner Up!"
             image="/PrizePhotos/second.png"
           />
           <PrizeCard
             place={6}
-            prizeName="TAS Platform"
+            prizeName="TAS from LambdaTest"
             subheading="All participants get a year of the LambdaTest TAS Platform at no extra cost."
             image="/PrizePhotos/third.png"
           />

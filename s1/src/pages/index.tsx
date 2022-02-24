@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <Meta
-        title="BuilderHacks Season One (Winter Edition)"
-        description="Meet one of the most inclusive Gen-Z hackathons. Win Prizes upto $5000 USD, Meet Hundreds of like-minded Gen-Z Builders, and have the experience of a lifetime."
-        image="https://aaryaman.tixte.co/BuilderhacksS1Logo.png"
+        title="BuilderHacks - An Inclusive Gen-Z Hackathon."
+        description="Meet BuilderHacks - A seasonal Gen-Z hackathon. In our first iteration, you can win prizes upto $5000 USD, Meet hundreds of like-minded Gen-Z builders, and have the experience of a lifetime."
+        image="https://aaryaman.tixte.co/builderhacks2.png"
         keywords="hackathon, gen-z, builderhacks, buildergroop, code, programming, software, testing, automation"
       />
       <div className="w-screen">
