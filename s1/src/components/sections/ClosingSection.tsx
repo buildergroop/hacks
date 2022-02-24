@@ -2,6 +2,7 @@ import React from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 import { Button } from "../common/Button";
 import { BuilderhacksLogo } from "~/components/common/Logo";
+import { REGISTRATION_LINK } from "~/constants";
 
 export const ClosingSection = () => {
   return (
@@ -34,9 +35,12 @@ export const ClosingSection = () => {
               size="xl"
               className="hover:w-[16rem] hover:h-[3.2rem]"
             >
-              <h2 className="text-dark-main text-[1.21rem] font-medium">
+              <a
+                href={REGISTRATION_LINK}
+                className="text-dark-main text-[1.21rem] font-medium"
+              >
                 join hackathon
-              </h2>
+              </a>
             </Button>
             <div className="h-[3rem] w-[3rem] bg-light-main rounded-full grid place-items-center cursor-pointer hover:bg-opacity-80 transition-all">
               <BsFillPlayFill className="text-dark-main h-[1.6rem] w-[1.6rem]" />

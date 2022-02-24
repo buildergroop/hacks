@@ -1,4 +1,5 @@
 import React from "react";
+import { REGISTRATION_LINK } from "~/constants";
 import { Button } from "../common/Button";
 
 export const AboutSection = () => {
@@ -31,9 +32,12 @@ export const AboutSection = () => {
             size="xl"
             className="hover:w-[16rem] hover:h-[3.2rem]"
           >
-            <h2 className="text-accent-inverse text-[1.21rem] font-medium">
+            <a
+              href={REGISTRATION_LINK}
+              className="text-accent-inverse text-[1.21rem] font-medium"
+            >
               join hackathon
-            </h2>
+            </a>
           </Button>
         </div>
         <div className="flex flex-col gap-5 lg:w-[30rem] 2xl:w-[40rem] lg:ml-[3.5rem]">
