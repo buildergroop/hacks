@@ -62,7 +62,6 @@ interface PrizeCardProps {
 }
 
 const PrizeCard: React.FC<PrizeCardProps> = ({
-  image,
   place,
   prizeName,
   subheading,
