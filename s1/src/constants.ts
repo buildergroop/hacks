@@ -1,1 +1,1 @@
-export const REGISTRATION_LINK = "https://nssdo58wcfn.typeform.com/to/HJqEqI1k";
+export const REGISTRATION_LINK = "https://forms.gle/Lcn2MYdFEDFtiEpC6";
