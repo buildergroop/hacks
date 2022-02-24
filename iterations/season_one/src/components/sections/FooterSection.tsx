@@ -2,21 +2,38 @@ import React from "react";
 
 export const FooterSection = () => {
   return (
-    <div className="px-20 py-5 w-screen flex flex-col gap-[2rem]">
-      {/* <div className="flex gap-10">
+    <div className="px-20 py-10 w-screen flex flex-col gap-[2rem]">
+      <div className="flex flex-wrap gap-20 mx-auto">
         <div className="flex flex-col gap-3">
-          <h3 className="font-bold text-[1.2rem]">Buildergroop</h3>
+          <h3 className="font-bold text-[1.2rem] text-accent-secondaryLight">
+            Buildergroop
+          </h3>
           <a href="https://discord.gg/builders">
             Join the Buildergroop Community
           </a>
           <a href="https://builderhacks.devpost.com">BuilderHacks on Devpost</a>
+          <a href="https://twitter.com/buildergroop">Find us on twitter</a>
         </div>
         <div className="flex flex-col gap-3">
-          <h3 className="font-bold text-[1.2rem]">LambdaTest</h3>
-          <a href="https://builderhacks.devpost.com">BuilderHacks on Devpost</a>
+          <h3 className="font-bold text-[1.2rem] text-accent-secondaryLight">
+            LambdaTest
+          </h3>
+          <a href="https://lambdatest.com">Lambdatest</a>
+          <a href="https://www.lambdatest.com/test-at-scale">
+            Test At Scale Platform
+          </a>
+          <a href="https://www.lambdatest.com/automation-testing">
+            Automation Testing
+          </a>
+          <a href="https://www.lambdatest.com/hypertest">HyperTest</a>
+          <a href="https://www.twitter.com/lambdatesting">
+            Find LambdaTest on Twitter
+          </a>
         </div>
         <div className="flex flex-col gap-3">
-          <h3 className="font-bold text-[1.2rem]">The Buildergroop Team</h3>
+          <h3 className="font-bold text-[1.2rem] text-accent-secondaryLight">
+            The Buildergroop Team
+          </h3>
 
           <span>
             Aaryaman Maheshwari{" "}
@@ -44,7 +61,7 @@ export const FooterSection = () => {
           </span>
         </div>
       </div>
-      <div className="w-full h-[1px] bg-dark-secondary" /> */}
+      <div className="w-full h-[1px] bg-dark-secondary" />
       <p className="mx-auto text-center text-[0.9rem]">
         BuilderHacks S1 (Winter 21') is a joint effort conducted by{" "}
         <a href="https://buildergroop.com" className="text-blue">
