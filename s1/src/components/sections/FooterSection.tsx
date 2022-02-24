@@ -2,7 +2,7 @@ import React from "react";
 
 export const FooterSection = () => {
   return (
-    <div className="px-20 py-10 w-screen flex flex-col gap-[2rem]">
+    <div className="px-[3rem] xl:px-20 py-10 w-screen flex flex-col gap-[2rem]">
       <div className="flex flex-wrap gap-20 mx-auto">
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-[1.2rem] text-accent-secondaryLight">
@@ -45,15 +45,15 @@ export const FooterSection = () => {
             </a>
           </span>
           <span>
-            Bereket Semagn{" "}
-            <a href="https://twitter.com/heybereket" className="text-blue">
-              (@heybereket)
-            </a>
-          </span>
-          <span>
             Ari{" "}
             <a href="https://twitter.com/vagalol" className="text-blue">
               (@vagalol)
+            </a>
+          </span>
+          <span>
+            Bereket Semagn{" "}
+            <a href="https://twitter.com/heybereket" className="text-blue">
+              (@heybereket)
             </a>
           </span>
           <span>

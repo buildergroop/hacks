@@ -5,17 +5,17 @@ import { BuilderhacksLogo } from "~/components/common/Logo";
 
 export const ClosingSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen flex flex-col justify-between py-[5rem]">
+    <div className="openingSectionBackground transition-all w-screen flex flex-col justify-between px-[3rem] md:px-0 py-[5rem]">
       <div className="w-full grid place-items-center">
         <div className="flex flex-col gap-8">
-          <div className="mx-auto -mb-3">
+          <div className="md:mx-auto -mb-3">
             <BuilderhacksLogo />
           </div>
-          <div className="flex flex-col gap-4 text-center">
-            <h1 className="font-bold text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem] 2xl:text-[4.5rem] leading-[1.3] tracking-[0.001em]">
+          <div className="flex flex-col gap-4 md:text-center">
+            <h1 className="font-bold text-[2.7rem] md:text-[4.2rem] lg:text-[4.5rem] xl:text-[4.9rem] 2xl:text-[5.3rem] leading-[1.3] tracking-[0.001em]">
               It's Time To Build.
             </h1>
-            <p className="text-[1.2rem] font-light md:max-w-[42rem] mx-auto">
+            <p className="text-[1rem] font-light md:max-w-[42rem] mx-auto">
               Are you ready to join{" "}
               <a href="https://buildergroop.com">Buildergroop's</a> first ever
               hackathon in collaboration with{" "}
@@ -26,7 +26,7 @@ export const ClosingSection = () => {
               we're sure you'll have a great time.
             </p>
           </div>
-          <div className="flex items-center mx-auto gap-3 z-[999]">
+          <div className="flex items-center md:mx-auto gap-3 z-[999]">
             <Button
               width="w-[13.2rem]"
               color="light"
