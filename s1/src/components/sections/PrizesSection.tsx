@@ -3,7 +3,7 @@ import React from "react";
 export const PrizesSection = () => {
   return (
     <div className="grid place-items-center dottedBackgroundDark text-light-main">
-      <div className="flex flex-col items-center gap-[3rem] p-[2rem] md:p-[4rem] mx-auto lg:w-[70rem] 2xl:w-[80rem] w-full">
+      <div className="flex flex-col items-center gap-[3rem] p-[4rem] mx-auto lg:w-[70rem] 2xl:w-[80rem] w-full">
         <div className="flex flex-col gap-2">
           <h1 className="font-bold text-[3rem] text-center">Prize's</h1>
           <p className="text-[1rem] text-center">
@@ -79,14 +79,22 @@ const PrizeCard: React.FC<PrizeCardProps> = ({
       : undefined;
 
   return (
-    <div className="cursor-pointer p-10 bg-dark-secondary text-accent-secondaryLight hover:bg-accent-main transition-all w-full md:w-[48%] lg:w-[19.4rem] md:h-[21rem] rounded-xl flex flex-col gap-5 shadow-xl bg-opacity-[70%] select-none">
+    <div
+      className={`${
+        !placeTh && "hidden md:block"
+      } cursor-pointer bg-accent-secondaryLight text-accent-secondaryDark hover:bg-accent-main hover:text-light-main transition-all w-full md:w-[48%] lg:w-[19.4rem] md:h-[21rem] rounded-xl flex flex-col gap-5 shadow-xl bg-opacity-[70%] select-none p-7 md:p-10`}
+    >
       {placeTh ? (
-        <div className={`flex flex-col h-[45%]`}>
+        <div className={`flex gap-2 md:gap-0 md:flex-col md:h-[45%]`}>
           <div className="flex">
-            <h1 className={`text-[5rem] leading-none font-semibold`}>
+            <h1
+              className={`text-[2.5rem] md:text-[5rem] leading-none font-semibold`}
+            >
               {place.toString()}
             </h1>
-            <span className={`text-[2rem] font-medium -mt-3`}>{placeTh}</span>
+            <span className={`text-[1rem] md:text-[2rem] font-medium -mt-3`}>
+              {placeTh}
+            </span>
           </div>
           <span className="font-medium text-[1.2rem] tracking-widest">
             PLACE
