@@ -6,7 +6,7 @@ export const AboutSection = () => {
     <div className="text-dark-main dottedBackgroundLight grid place-items-center p-[2rem] md:p-[4rem]">
       <div className="flex flex-col gap-[3rem] lg:gap-0 lg:flex-row justify-between items-center 2xl:w-[80rem]">
         <div className="flex flex-col gap-7 lg:w-[50%]">
-          <h1 className="font-semibold text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] leading-tight">
+          <h1 className="font-semibold text-[3rem] xl:text-[3.7rem] 2xl:text-[4rem] leading-tight">
             A Hackathon for the Builders of Tomorrow.
           </h1>
           <p className="text-dark-secondary">
@@ -36,20 +36,24 @@ export const AboutSection = () => {
             </h2>
           </Button>
         </div>
-        <div className="flex flex-col gap-5 lg:w-[30rem] 2xl:w-[40rem] lg:ml-[3.5rem] lg:w-[50%]">
-          <InfoCard title="Connect." background="bg-pink" textColor="text-pink">
-            The first edition of BuilderHacks will be a{" "}
-            <span className="font-medium">golden opportunity</span> to make
-            friends in your generation that have similar interests.
-          </InfoCard>
-
+        <div className="flex flex-col gap-5 lg:w-[30rem] 2xl:w-[40rem] lg:ml-[3.5rem]">
           <InfoCard title="Learn." background="bg-blue" textColor="text-blue">
             Participate in a{" "}
             <span className="font-medium">number of workshops</span> hosted
             during the course of the hackathon and learn vital technologies.
           </InfoCard>
 
-          <InfoCard title="Win." background="bg-purple" textColor="text-purple">
+          <InfoCard title="Connect." background="bg-pink" textColor="text-pink">
+            The first edition of BuilderHacks will be a{" "}
+            <span className="font-medium">golden opportunity</span> to make
+            friends in your generation that have similar interests.
+          </InfoCard>
+
+          <InfoCard
+            title="Reward."
+            background="bg-purple"
+            textColor="text-purple"
+          >
             Get Macbooks, Airpods, keyboards, merch from great companies, and
             much more from our prize pool
             <span className="font-medium"> worth 5000 USD.</span>

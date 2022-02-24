@@ -11,8 +11,11 @@ export const FooterSection = () => {
           <a href="https://discord.gg/builders">
             Join the Buildergroop Community
           </a>
-          <a href="https://builderhacks.devpost.com">BuilderHacks on Devpost</a>
-          <a href="https://twitter.com/buildergroop">Find us on twitter</a>
+          {/* <a href="https://builderhacks.devpost.com">BuilderHacks on Devpost</a> */}
+          <a href="https://twitter.com/buildergroop">Find us on Twitter</a>
+          <a href="https://www.youtube.com/channel/UCMBXL8jvG9D6W3Ngh6UfAbQ">
+            Find us on Youtube
+          </a>
         </div>
         <div className="flex flex-col gap-3">
           <h3 className="font-bold text-[1.2rem] text-accent-secondaryLight">

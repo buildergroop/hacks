@@ -46,9 +46,10 @@ const Content = () => {
             <a href="https://lambdatest.com">
               <span className="font-semibold">with LambdaTest</span>
             </a>
-            . Win Prizes upto <span className="font-semibold">$5000 USD</span>,
-            Meet Hundreds of like-minded Gen-Z Builders, and have the experience
-            of a lifetime.
+            . Win cool gadgets from our{" "}
+            <span className="font-semibold">$5000 USD</span> prize pool, Meet
+            hundreds of like-minded Gen-Z builders, and have the experience of a
+            lifetime.
           </p>
         </div>
         <div className="flex items-center md:mx-auto gap-3 z-[999]">
