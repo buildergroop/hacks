@@ -1,10 +1,10 @@
 import React from "react";
 import { Button } from "../common/Button";
 import { Navbar } from "../parts/Navbar";
-import { BsFillPlayFill } from "react-icons/bs";
 import { GiPartyPopper } from "react-icons/gi";
 import { InfoBanner } from "../common/InfoBanner";
 import { REGISTRATION_LINK } from "~/constants";
+import { PlayButton } from "../common/PlayButton";
 
 export const OpeningSection = () => {
   return (
@@ -68,9 +68,7 @@ const Content = () => {
               join hackathon
             </a>
           </Button>
-          <div className="h-[3rem] w-[3rem] bg-light-main rounded-full grid place-items-center cursor-pointer hover:bg-opacity-80 transition-all">
-            <BsFillPlayFill className="text-dark-main h-[1.6rem] w-[1.6rem]" />
-          </div>
+          <PlayButton />
         </div>
       </div>
     </div>

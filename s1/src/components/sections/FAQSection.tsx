@@ -69,7 +69,7 @@ export const FAQSection = () => {
     <div className="grid place-items-center bg-light-main text-dark-main">
       <div className="flex flex-col gap-[3rem] p-[2rem] md:p-[4rem] mx-auto lg:w-[70rem] 2xl:w-[80rem]">
         <div className="flex flex-col gap-2">
-          <h1 className="font-bold text-[3rem]">FAQ's</h1>
+          <h1 className="font-bold text-[3rem]">FAQs</h1>
           <p className="text-[1rem]">
             Listed are some of the answers to questions our participants ask us
             quite frequently. If you’re not able to resolve any query you may

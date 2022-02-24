@@ -5,7 +5,7 @@ export const PrizesSection = () => {
     <div className="grid place-items-center dottedBackgroundDark text-light-main">
       <div className="flex flex-col items-center gap-[3rem] p-[4rem] mx-auto lg:w-[70rem] 2xl:w-[80rem] w-full">
         <div className="flex flex-col gap-2">
-          <h1 className="font-bold text-[3rem] text-center">Prize's</h1>
+          <h1 className="font-bold text-[3rem] text-center">Prizes</h1>
           <p className="text-[1rem] text-center">
             These are some of the prizes you can get by winning Builderhacks
             Season One!
@@ -15,13 +15,13 @@ export const PrizesSection = () => {
           <PrizeCard
             place={1}
             prizeName='2 × 13" M1 Macbook Air'
-            subheading="M1 MacBook Pro 2022 (with similar specs) if you are solo"
+            subheading='14" M1 MacBook Pro 2021 (with similar specs) if you are solo'
             image="/PrizePhotos/first.png"
           />
           <PrizeCard
             place={2}
             prizeName="Apple Watch (Series 7)"
-            subheading="+ Airpods (3rd Gen)"
+            subheading="+ AirPods (3rd Gen)"
             image="/PrizePhotos/second.png"
           />
           <PrizeCard
@@ -39,13 +39,13 @@ export const PrizesSection = () => {
           <PrizeCard
             place={5}
             prizeName="Server Role"
-            subheading="Get a cool role in the Buildergroop Discord Server."
+            subheading="Get a special role in the Buildergroop Discord for being a Runner Up!"
             image="/PrizePhotos/second.png"
           />
           <PrizeCard
             place={6}
             prizeName="TAS Platform"
-            subheading="All participants get a free year of the LambdaTest TAS Platform."
+            subheading="All participants get a year of the LambdaTest TAS Platform at no extra cost."
             image="/PrizePhotos/third.png"
           />
         </div>
