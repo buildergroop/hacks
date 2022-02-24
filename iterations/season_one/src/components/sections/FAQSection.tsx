@@ -8,6 +8,22 @@ interface FAQ {
 
 const faqs: FAQ[] = [
   {
+    question: "What is a hackathon?",
+    answer: (
+      <p className="">
+        A hackathon is where a group of (or one) developer(s) build an awesome
+        piece of software revolving around a particular theme via specific
+        programming languages and technologies.
+        <br />
+        <br />
+        The purpose of a hackathon is to "hack together" something in a given
+        time frame. It need not be a fully functional product, however, it
+        should be able to demonstrate your idea well enough in the most simple
+        possible manner.
+      </p>
+    ),
+  },
+  {
     question: "Will there be a theme?",
     answer:
       "There will be but, it will be disclosed closer to the hackathon date to prevent people from starting their hack early.",
@@ -16,6 +32,11 @@ const faqs: FAQ[] = [
     question: "When is the hackathon?",
     answer:
       "It's during the weekend of February 25th, 2022 - February 27th, 2022. BuilderHacks starts at 9PM EST on the 25th and will go on for 36 hours.",
+  },
+  {
+    question: "Can I work in a team?",
+    answer:
+      "To ensure we can distribute awesome prizes for all the winners in a team, we are limiting team sizes to a maximum of 2 individuals.",
   },
   {
     question: "What happens if I win first place as a one-person team?",
@@ -45,7 +66,7 @@ const faqs: FAQ[] = [
 
 export const FAQSection = () => {
   return (
-    <div className="grid place-items-center text-dark-main bg-light-tertiary">
+    <div className="grid place-items-center bg-dark-main text-light-main">
       <div className="flex flex-col gap-[3rem] p-[2rem] md:p-[4rem] mx-auto 2xl:w-[80rem]">
         <div className="flex flex-col gap-2]">
           <h1 className="font-bold text-[2rem]">FAQ's</h1>
@@ -71,7 +92,7 @@ const FAQCard: React.FC<FAQ> = ({ question, answer }) => {
 
   return isOpen ? (
     <div
-      className="flex items-center justify-between p-5 rounded-xl bg-light-main w-full cursor-pointer transition-all"
+      className="flex items-center justify-between p-5 rounded-xl bg-dark-secondary w-full cursor-pointer transition-all"
       onClick={() => {
         setIsOpen((c) => !c);
       }}
@@ -83,7 +104,7 @@ const FAQCard: React.FC<FAQ> = ({ question, answer }) => {
       <BsFillCaretDownFill />
     </div>
   ) : (
-    <div className="flex flex-col gap-2 p-5 rounded-xl bg-light-main w-full transition-all">
+    <div className="flex flex-col gap-2 p-5 rounded-xl bg-dark-secondary w-full transition-all">
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={() => {

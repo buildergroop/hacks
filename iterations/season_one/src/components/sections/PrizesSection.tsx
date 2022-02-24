@@ -2,7 +2,7 @@ import React from "react";
 
 export const PrizesSection = () => {
   return (
-    <div className="lg:grid place-items-center bg-light-main text-dark-main">
+    <div className="lg:grid place-items-center text-dark-main bg-light-tertiary">
       <div className="p-[2rem] md:p-[4rem] mx-auto flex flex-col items-center gap-[7rem]">
         <h1 className="text-theme-main font-extrabold text-[3rem] text-accent-main">
           Grand Prizes
@@ -22,11 +22,14 @@ export const PrizesSection = () => {
           />
           <PrizeCard
             place={3}
-            prizeName="Razer Huntsman Elite Keyboard"
+            prizeName="Razer Keyboard (Huntsman)"
             subheading="+ Razer Kraken Headphones"
             image="/PrizePhotos/third.png"
           />
         </div>
+        <h3 className="font-medium text-[1rem]">
+          Runner Up: 1 Year of Discord Nitro (regular) + Wumpus Plushie
+        </h3>
       </div>
     </div>
   );
@@ -53,7 +56,7 @@ const PrizeCard: React.FC<PrizeCardProps> = ({
       className={`flex flex-col items-center gap-7 p-5 rounded-xl prizeBoxShadow ${
         isMainCard
           ? "bg-accent-main text-accent-inverse lg:w-[19rem] lg:h-[27rem]"
-          : "bg-accent-secondaryLight text-accent-main lg:w-[16rem] lg:h-[22rem]"
+          : "bg-accent-secondaryLight text-accent-main lg:w-[17rem] lg:h-[22rem]"
       }`}
     >
       <img
@@ -94,7 +97,7 @@ const PrizeCard: React.FC<PrizeCardProps> = ({
           {prizeName}
         </h2>
         <span
-          className={`text-[0.8rem] font-thin text-center tracking-wide w-[80%] mx-auto`}
+          className={`text-[0.7rem] font-thin text-center tracking-wide w-[80%] mx-auto`}
         >
           {subheading}
         </span>

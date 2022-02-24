@@ -4,6 +4,7 @@ import { Navbar } from "../parts/Navbar";
 import { BsFillPlayFill } from "react-icons/bs";
 import { GiPartyPopper } from "react-icons/gi";
 import { InfoBanner } from "../common/InfoBanner";
+import { motion } from "framer-motion";
 
 export const OpeningSection = () => {
   return (
@@ -17,12 +18,16 @@ export const OpeningSection = () => {
       </InfoBanner>
       <div className="flex flex-col justify-between px-[2rem] py-[1rem] w-full">
         <Navbar />
-        <Content />
-        <img
-          src="/CodeEditor.svg"
-          className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
-          draggable="false"
-        />
+        <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
+          <Content />
+        </motion.div>
+        <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
+          <img
+            src="/CodeEditor.svg"
+            className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
+            draggable="false"
+          />
+        </motion.div>
         <Sponsor />
       </div>
     </div>

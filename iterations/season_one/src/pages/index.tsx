@@ -4,17 +4,17 @@ import { ClosingSection } from "~/components/sections/ClosingSection";
 import { FAQSection } from "~/components/sections/FAQSection";
 import { OpeningSection } from "~/components/sections/OpeningSection";
 import { FooterSection } from "~/components/sections/FooterSection";
-// import { PrizesSection } from "~/components/sections/PrizesSection";
+import { PrizesSection } from "~/components/sections/PrizesSection";
 
 export default function Home() {
   return (
     <div className="w-screen">
       <OpeningSection />
       <AboutSection />
+      <PrizesSection />
       <FAQSection />
       <ClosingSection />
       <FooterSection />
-      {/* <PrizesSection /> */}
     </div>
   );
 }
