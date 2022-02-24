@@ -66,15 +66,17 @@ const faqs: FAQ[] = [
 
 export const FAQSection = () => {
   return (
-    <div className="grid place-items-center bg-dark-main text-light-main">
-      <div className="flex flex-col gap-[3rem] p-[2rem] md:p-[4rem] mx-auto 2xl:w-[80rem]">
-        <div className="flex flex-col gap-2]">
-          <h1 className="font-bold text-[2rem]">FAQ's</h1>
+    <div className="grid place-items-center bg-light-main text-dark-main">
+      <div className="flex flex-col gap-[3rem] p-[2rem] md:p-[4rem] mx-auto lg:w-[70rem] 2xl:w-[80rem]">
+        <div className="flex flex-col gap-2">
+          <h1 className="font-bold text-[3rem]">FAQ's</h1>
           <p className="text-[1rem]">
             Listed are some of the answers to questions our participants ask us
             quite frequently. If you’re not able to resolve any query you may
-            have feel free to ping any one of the admins in the Buildergroop
-            Discord Server.
+            have feel free to ping any one of the admins in the{" "}
+            <a href="https://discord.gg/builders" className="text-accent-main">
+              Buildergroop Discord Server.
+            </a>
           </p>
         </div>
         <div className="flex flex-col gap-3 w-full">
@@ -92,32 +94,26 @@ const FAQCard: React.FC<FAQ> = ({ question, answer }) => {
 
   return isOpen ? (
     <div
-      className="flex items-center justify-between p-5 rounded-xl bg-dark-secondary w-full cursor-pointer transition-all"
+      className="flex items-center justify-between p-5 border-b-2 border-light-secondary w-full cursor-pointer"
       onClick={() => {
         setIsOpen((c) => !c);
-      }}
-      style={{
-        boxShadow: "0px 6px 12px 0px #00000005",
       }}
     >
       <h1 className="font-semibold text-[1rem] select-none">{question}</h1>
       <BsFillCaretDownFill />
     </div>
   ) : (
-    <div className="flex flex-col gap-2 p-5 rounded-xl bg-dark-secondary w-full transition-all">
+    <div className="flex flex-col gap-2 w-full">
       <div
-        className="flex items-center justify-between cursor-pointer"
+        className="flex items-center justify-between cursor-pointer p-5 border-b-2 border-accent-main text-accent-main"
         onClick={() => {
           setIsOpen((c) => !c);
-        }}
-        style={{
-          boxShadow: "0px 6px 12px 0px #00000005",
         }}
       >
         <h1 className="font-semibold text-[1rem] select-none">{question}</h1>
         <BsFillCaretUpFill />
       </div>
-      <div className="mt-5">{answer}</div>
+      <div className="mt-5 pb-5 pt-2 px-5">{answer}</div>
     </div>
   );
 };

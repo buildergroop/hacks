@@ -2,18 +2,16 @@ import React from "react";
 
 export const PrizesSection = () => {
   return (
-    <div className="lg:grid place-items-center text-dark-main bg-light-tertiary">
-      <div className="p-[2rem] md:p-[4rem] mx-auto flex flex-col items-center gap-[7rem]">
-        <h1 className="text-theme-main font-extrabold text-[3rem] text-accent-main">
-          Grand Prizes
-        </h1>
-        <div className="flex flex-col lg:flex-row items-center gap-10">
-          <PrizeCard
-            place={2}
-            prizeName="Apple Watch (Series 7)"
-            subheading="+ Airpods (3rd Gen)"
-            image="/PrizePhotos/second.png"
-          />
+    <div className="grid place-items-center dottedBackgroundDark text-light-main">
+      <div className="flex flex-col items-center gap-[3rem] p-[2rem] md:p-[4rem] mx-auto lg:w-[70rem] 2xl:w-[80rem] w-full">
+        <div className="flex flex-col gap-2">
+          <h1 className="font-bold text-[3rem] text-center">Prize's</h1>
+          <p className="text-[1rem] text-center">
+            These are some of the prizes you can get by winning Builderhacks
+            Season One!
+          </p>
+        </div>
+        <div className="flex flex-wrap justify-center gap-5">
           <PrizeCard
             place={1}
             prizeName='2 × 13" M1 Macbook Air'
@@ -21,28 +19,105 @@ export const PrizesSection = () => {
             image="/PrizePhotos/first.png"
           />
           <PrizeCard
+            place={2}
+            prizeName="Apple Watch (Series 7)"
+            subheading="+ Airpods (3rd Gen)"
+            image="/PrizePhotos/second.png"
+          />
+          <PrizeCard
             place={3}
-            prizeName="Razer Keyboard (Huntsman)"
+            prizeName="Razer Huntsman Keyboard"
             subheading="+ Razer Kraken Headphones"
             image="/PrizePhotos/third.png"
           />
+          <PrizeCard
+            place={4}
+            prizeName="Discord Nitro Yearly"
+            subheading="+ Wumpus Plushie from Discord"
+            image="/PrizePhotos/first.png"
+          />
+          <PrizeCard
+            place={5}
+            prizeName="Server Role"
+            subheading="Get a cool role in the Buildergroop Discord Server."
+            image="/PrizePhotos/second.png"
+          />
+          <PrizeCard
+            place={6}
+            prizeName="TAS Platform"
+            subheading="All participants get a free year of the LambdaTest TAS Platform."
+            image="/PrizePhotos/third.png"
+          />
         </div>
-        <h3 className="font-medium text-[1rem]">
-          Runner Up: 1 Year of Discord Nitro (regular) + Wumpus Plushie
-        </h3>
       </div>
     </div>
   );
 };
 
 interface PrizeCardProps {
-  place: 1 | 2 | 3;
+  place: 1 | 2 | 3 | 4 | 5 | 6;
   prizeName: string;
   subheading: string;
   image: string;
 }
 
 const PrizeCard: React.FC<PrizeCardProps> = ({
+  image,
+  place,
+  prizeName,
+  subheading,
+}) => {
+  const placeTh =
+    place === 1
+      ? "st"
+      : place === 2
+      ? "nd"
+      : place === 3
+      ? "rd"
+      : place === 4
+      ? "th"
+      : undefined;
+
+  return (
+    <div className="cursor-pointer p-10 bg-dark-secondary text-accent-secondaryLight hover:bg-accent-main transition-all w-full md:w-[48%] lg:w-[19.4rem] md:h-[21rem] rounded-xl flex flex-col gap-5 shadow-xl bg-opacity-[70%] select-none">
+      {placeTh ? (
+        <div className={`flex flex-col h-[45%]`}>
+          <div className="flex">
+            <h1 className={`text-[5rem] leading-none font-semibold`}>
+              {place.toString()}
+            </h1>
+            <span className={`text-[2rem] font-medium -mt-3`}>{placeTh}</span>
+          </div>
+          <span className="font-medium text-[1.2rem] tracking-widest">
+            PLACE
+          </span>
+        </div>
+      ) : (
+        <h1 className={`text-[3rem] leading-none font-bold h-[45%]`}>
+          {place === 5 ? "RUNNER UP" : "ALL HACKERS"}
+        </h1>
+      )}
+
+      <div className="flex flex-col gap-3 mt-[1rem]">
+        <h2 className={`font-semibold text-[1.7rem] leading-[1.2]`}>
+          {prizeName}
+        </h2>
+        <span className={`text-[0.7rem] font-regular tracking-wide`}>
+          {subheading}
+        </span>
+      </div>
+    </div>
+  );
+};
+
+interface PrizeCardProps2 {
+  place: 1 | 2 | 3;
+  prizeName: string;
+  subheading: string;
+  image: string;
+}
+
+const PrizeCard2: React.FC<PrizeCardProps2> = ({
   place,
   prizeName,
   subheading,
