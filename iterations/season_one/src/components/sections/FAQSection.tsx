@@ -46,8 +46,8 @@ const faqs: FAQ[] = [
 export const FAQSection = () => {
   return (
     <div className="grid place-items-center text-dark-main bg-light-tertiary">
-      <div className="flex justify-between p-[2rem] md:p-[4rem] mx-auto 2xl:w-[80rem]">
-        <div className="flex flex-col gap-2 w-[46%]">
+      <div className="flex flex-col gap-[3rem] p-[2rem] md:p-[4rem] mx-auto 2xl:w-[80rem]">
+        <div className="flex flex-col gap-2]">
           <h1 className="font-bold text-[2rem]">FAQ's</h1>
           <p className="text-[1rem]">
             Listed are some of the answers to questions our participants ask us
@@ -56,7 +56,7 @@ export const FAQSection = () => {
             Discord Server.
           </p>
         </div>
-        <div className="flex flex-col gap-3 w-[48%]">
+        <div className="flex flex-col gap-3 w-full">
           {faqs.map((faq, index) => {
             return <FAQCard {...faq} key={index} />;
           })}

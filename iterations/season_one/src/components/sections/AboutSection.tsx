@@ -4,7 +4,7 @@ import { Button } from "../common/Button";
 export const AboutSection = () => {
   return (
     <div className="text-dark-main dottedBackgroundLight grid place-items-center p-[2rem] md:p-[4rem]">
-      <div className="flex flex-col lg:flex-row justify-between items-center 2xl:w-[80rem]">
+      <div className="flex flex-col gap-[3rem] lg:gap-0 lg:flex-row justify-between items-center 2xl:w-[80rem]">
         <div className="flex flex-col gap-7 lg:w-[50%]">
           <h1 className="font-semibold text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem] leading-tight">
             A Hackathon Exclusive to the Youth.
