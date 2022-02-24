@@ -4,30 +4,27 @@ import { Navbar } from "../parts/Navbar";
 import { BsFillPlayFill } from "react-icons/bs";
 import { GiPartyPopper } from "react-icons/gi";
 import { InfoBanner } from "../common/InfoBanner";
-import { motion } from "framer-motion";
 
 export const OpeningSection = () => {
   return (
     <div className="openingSectionBackground transition-all w-screen overflow-x-hidden flex flex-col justify-between select-none">
-      <InfoBanner Icon={GiPartyPopper}>
-        Registrations Are Now Open! Click{" "}
-        <a href="" className="font-bold">
-          Here
-        </a>{" "}
-        to Register.
-      </InfoBanner>
-      <div className="flex flex-col justify-between px-[2rem] py-[1rem] w-full">
+      <div className="hidden md:block">
+        <InfoBanner Icon={GiPartyPopper}>
+          Registrations Are Now Open! Click{" "}
+          <a href="" className="font-bold">
+            Here
+          </a>{" "}
+          to Register.
+        </InfoBanner>
+      </div>
+      <div className="flex flex-col justify-between px-[2rem] py-[1rem] w-full mb-[3rem]">
         <Navbar />
-        <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
-          <Content />
-        </motion.div>
-        <motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
-          <img
-            src="/CodeEditor.svg"
-            className="mx-auto w-[70rem] h-[50rem] -mt-[4rem]"
-            draggable="false"
-          />
-        </motion.div>
+        <Content />
+        <img
+          src="/CodeEditor.svg"
+          className="mx-auto hidden lg:block xl:w-[70rem] xl:h-[50rem] -mt-[2rem] xl:-mt-[4rem]"
+          draggable="false"
+        />
         <Sponsor />
       </div>
     </div>
@@ -38,11 +35,13 @@ const Content = () => {
   return (
     <div className="w-full grid place-items-center mt-[4rem]">
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4 text-center">
-          <h1 className="font-bold text-[3.5rem] md:text-[4.2rem] lg:text-[4.5rem] xl:text-[4.9rem] 2xl:text-[5.3rem] leading-[1.3] tracking-[0.001em]">
+        <div className="flex flex-col gap-4 md:text-center">
+          <SponsorSm />
+
+          <h1 className="font-bold text-[2.7rem] md:text-[4.2rem] lg:text-[4.5rem] xl:text-[4.9rem] 2xl:text-[5.3rem] leading-[1.3] tracking-[0.001em]">
             Members of Gen-Z, <br /> It's Time To Build.
           </h1>
-          <p className="text-[1.2rem] font-light md:max-w-[42rem] mx-auto">
+          <p className="text-[1rem] font-light md:max-w-[42rem] mx-auto">
             Welcome to the winter edition of BuilderHacks 2021 in collaboration{" "}
             <a href="https://lambdatest.com">
               <span className="font-semibold">with LambdaTest</span>
@@ -52,7 +51,7 @@ const Content = () => {
             of a lifetime.
           </p>
         </div>
-        <div className="flex items-center mx-auto gap-3 z-[999]">
+        <div className="flex items-center md:mx-auto gap-3 z-[999]">
           <Button
             width="w-[13.2rem]"
             color="light"
@@ -73,9 +72,20 @@ const Content = () => {
   );
 };
 
+const SponsorSm = () => {
+  return (
+    <div className="flex lg:hidden items-center gap-3 md:mx-auto">
+      <h3 className="font-medium text-[1.4rem]">Powered By</h3>
+      <a href="https://lambdatest.com">
+        <img src="/LambdatestLogo.png" alt="" className="h-[1.8rem]" />
+      </a>
+    </div>
+  );
+};
+
 const Sponsor = () => {
   return (
-    <div className="flex flex-col items-center gap-4 -mt-16 mx-auto mb-[2rem]">
+    <div className="hidden lg:flex flex-col items-center gap-4 lg:-mt-10 xl:-mt-16 mx-auto">
       <div className="flex items-center gap-3">
         <h3 className="font-medium text-[2rem]">Powered By</h3>
         <a href="https://lambdatest.com">
