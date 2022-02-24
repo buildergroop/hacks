@@ -13,7 +13,7 @@ export default function Home() {
       <Meta
         title="BuilderHacks - An Inclusive Gen-Z Hackathon."
         description="Meet BuilderHacks - A seasonal Gen-Z hackathon. In our first iteration, you can win prizes upto $5000 USD, Meet hundreds of like-minded Gen-Z builders, and have the experience of a lifetime."
-        image="https://aaryaman.tixte.co/builderhacks2.png"
+        image="https://cdn.discordapp.com/attachments/924237532919627816/946482248918638612/builderhacks_winter_emoji.png"
         keywords="hackathon, gen-z, builderhacks, buildergroop, code, programming, software, testing, automation"
       />
       <div className="w-screen">
