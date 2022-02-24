@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useHackathonStartedContext } from "~/context/HackathonStartedContext";
 
 export const Countdown = () => {
-	const { setHackathonStarted } = useHackathonStartedContext() as any;
+	const { setHackathonStarted } = useHackathonStartedContext();
 
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);

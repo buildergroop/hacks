@@ -1,18 +1,21 @@
 import React, { useState, useContext } from "react";
 
-const HackathonStartedContext = React.createContext(null);
+const HackathonStartedContext = React.createContext<{
+	hackathonStarted: boolean;
+	setHackathonStarted: (hackathonStarted: boolean) => void;
+}>({ hackathonStarted: false, setHackathonStarted: () => void 0 });
 
 export const useHackathonStartedContext = () =>
-  useContext(HackathonStartedContext);
+	useContext(HackathonStartedContext);
 
-export const HackathonStartedContextProvider = ({ children }: any) => {
-  const [hackathonStarted, setHackathonStarted] = useState<string>("");
+export const HackathonStartedContextProvider: React.FC = ({ children }) => {
+	const [hackathonStarted, setHackathonStarted] = useState<boolean>(false);
 
-  return (
-    <HackathonStartedContext.Provider
-      value={{ hackathonStarted, setHackathonStarted } as any}
-    >
-      {children}
-    </HackathonStartedContext.Provider>
-  );
+	return (
+		<HackathonStartedContext.Provider
+			value={{ hackathonStarted, setHackathonStarted }}
+		>
+			{children}
+		</HackathonStartedContext.Provider>
+	);
 };
