@@ -12,7 +12,7 @@ export const Countdown = () => {
 	useEffect(() => {
 		const target = new Date(Date.UTC(2022, 1, 26, 2, 30, 0));
 
-		const interval = setInterval(() => {
+		const updateTime = () => {
 			const now = new Date();
 			const difference = target.getTime() - now.getTime();
 
@@ -33,7 +33,11 @@ export const Countdown = () => {
 			if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
 				setHackathonStarted(true);
 			}
-		}, 1000);
+		};
+
+		const interval = setInterval(updateTime, 1000);
+		// run an update on first load
+		updateTime();
 
 		return () => clearInterval(interval);
 	}, []);
