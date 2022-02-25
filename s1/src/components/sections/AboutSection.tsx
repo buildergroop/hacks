@@ -30,7 +30,7 @@ export const AboutSection = () => {
             color="accent"
             rounded="xl"
             size="xl"
-            className="hover:w-[16rem] hover:h-[3.2rem]"
+            className="hover:w-[14rem]"
           >
             <a
               href={REGISTRATION_LINK}

@@ -45,7 +45,7 @@ export const PrizesSection = () => {
           <PrizeCard
             place={6}
             prizeName="TAS from LambdaTest"
-            subheading="All participants get a year of the LambdaTest TAS Platform at no extra cost."
+            subheading="All participants get a free year of the LambdaTest TAS Platform!"
             image="/PrizePhotos/third.png"
           />
         </div>
@@ -91,7 +91,7 @@ const PrizeCard: React.FC<PrizeCardProps> = ({
             >
               {place.toString()}
             </h1>
-            <span className={`text-[1rem] md:text-[2rem] font-medium -mt-3`}>
+            <span className={`text-[1rem] md:text-[2rem] font-medium -mt-2`}>
               {placeTh}
             </span>
           </div>

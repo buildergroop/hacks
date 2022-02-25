@@ -1,10 +1,9 @@
 import React from "react";
-import { Button } from "../common/Button";
 import { Navbar } from "../parts/Navbar";
 import { GiPartyPopper } from "react-icons/gi";
 import { InfoBanner } from "../common/InfoBanner";
 import { REGISTRATION_LINK } from "~/constants";
-import { PlayButton } from "../common/PlayButton";
+import { ButtonRow } from "../common/ButtonRow";
 
 export const OpeningSection = () => {
   return (
@@ -53,23 +52,7 @@ const Content = () => {
             lifetime.
           </p>
         </div>
-        <div className="flex items-center md:mx-auto gap-3 z-[999]">
-          <Button
-            width="w-[13.2rem]"
-            color="light"
-            rounded="xl"
-            size="xl"
-            className="hover:w-[16rem] hover:h-[3.2rem]"
-          >
-            <a
-              href={REGISTRATION_LINK}
-              className="text-dark-main text-[1.21rem] font-medium"
-            >
-              join hackathon
-            </a>
-          </Button>
-          <PlayButton />
-        </div>
+        <ButtonRow />
       </div>
     </div>
   );

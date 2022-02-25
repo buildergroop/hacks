@@ -1,8 +1,6 @@
 import React from "react";
-import { Button } from "../common/Button";
 import { BuilderhacksLogo } from "~/components/common/Logo";
-import { REGISTRATION_LINK } from "~/constants";
-import { PlayButton } from "../common/PlayButton";
+import { ButtonRow } from "../common/ButtonRow";
 
 export const ClosingSection = () => {
   return (
@@ -27,23 +25,7 @@ export const ClosingSection = () => {
               we're sure you'll have a great time.
             </p>
           </div>
-          <div className="flex items-center md:mx-auto gap-3 z-[999]">
-            <Button
-              width="w-[13.2rem]"
-              color="light"
-              rounded="xl"
-              size="xl"
-              className="hover:w-[16rem] hover:h-[3.2rem]"
-            >
-              <a
-                href={REGISTRATION_LINK}
-                className="text-dark-main text-[1.21rem] font-medium"
-              >
-                join hackathon
-              </a>
-            </Button>
-            <PlayButton />
-          </div>
+          <ButtonRow />
         </div>
       </div>
     </div>

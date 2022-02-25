@@ -32,10 +32,10 @@ export const Button: React.FC<ButtonProps> = ({
         ${rounded === "xl" && "rounded-xl"}
         ${rounded === "full" && "rounded-full"}
 
-        ${size === "sm" && "h-[2rem] px-2"}
-        ${size === "md" && "h-[2.4rem] px-4"}
-        ${size === "lg" && "h-[2.7rem] px-6"}
-        ${size === "xl" && "h-[3rem] px-8"}
+        ${size === "sm" && "h-[2rem] px-1"}
+        ${size === "md" && "h-[2.4rem] px-2"}
+        ${size === "lg" && "h-[2.7rem] px-3"}
+        ${size === "xl" && "h-[3rem] px-5"}
 
         ${color === "light" && "bg-light-main"}
         ${color === "dark" && "bg-dark-main"}
