@@ -6,7 +6,7 @@ import { PlayButton } from "./PlayButton";
 
 export const ButtonRow = () => {
     return (
-        <div className="flex items-center md:mx-auto gap-3 z-[999]">
+        <div className="flex flex-col gap-2 md:gap-3 md:flex-row md:items-center md:mx-auto z-[999]">
           <Button
             width="w-[12rem]"
             color="light"

@@ -7,7 +7,7 @@ import { ButtonRow } from "../common/ButtonRow";
 
 export const OpeningSection = () => {
   return (
-    <div className="openingSectionBackground transition-all w-screen overflow-x-hidden flex flex-col justify-between select-none">
+    <div className="openingSectionBackground transition-all overflow-x-hidden flex flex-col justify-between select-none">
       <div className="hidden md:block">
         <InfoBanner Icon={GiPartyPopper}>
           Registrations Are Now Open! Click{" "}
@@ -38,8 +38,8 @@ const Content = () => {
         <div className="flex flex-col gap-4 md:text-center">
           <SponsorSm />
 
-          <h1 className="font-bold text-[2.7rem] md:text-[4.2rem] lg:text-[4.5rem] xl:text-[4.9rem] 2xl:text-[5.3rem] leading-[1.3] tracking-[0.001em]">
-            Members of Gen-Z, <br /> It's Time To Build.
+          <h1 className="font-bold text-[2.7rem] md:text-[4.2rem] lg:text-[4.5rem] xl:text-[4.9rem] 2xl:text-[5.3rem] leading-[1.3] tracking-[0.001em] flex flex-wrap">
+            Members of Gen-Z, <br className="hidden sm:block" /> It's Time To Build.
           </h1>
           <p className="text-[1rem] font-light md:max-w-[42rem] mx-auto">
             Welcome to the winter edition of BuilderHacks 2021 in collaboration{" "}
