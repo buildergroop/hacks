@@ -44,10 +44,10 @@ export const Countdown = () => {
 
 	return (
 		<div className="flex items-center gap-2">
-			<CountdownCard title="days" value={days} />
-			<CountdownCard title="hours" value={hours} />
-			<CountdownCard title="mins" value={minutes} />
-			<CountdownCard title="secs" value={seconds} />
+			<CountdownCard title="days" value={0} />
+			<CountdownCard title="hours" value={0} />
+			<CountdownCard title="mins" value={0} />
+			<CountdownCard title="secs" value={0} />
 		</div>
 	);
 };
