@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   eslint: {
-    dirs: ['src'],
+    dirs: ["src"],
   },
 
   reactStrictMode: true,
@@ -20,7 +20,7 @@ module.exports = {
       issuer: /\.[jt]sx?$/,
       use: [
         {
-          loader: '@svgr/webpack',
+          loader: "@svgr/webpack",
           options: {
             typescript: true,
             icon: true,
