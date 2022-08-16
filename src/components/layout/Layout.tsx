@@ -13,12 +13,7 @@ export default function Layout({
   return (
     <>
       <Seo {...seoProps} />
-
-      <div {...containerProps}>
-        <Header />
-        {/* TODO: add height to header and space everything out */}
-        {children}
-      </div>
+      <div {...containerProps}>{children}</div>
     </>
   );
 }

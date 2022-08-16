@@ -7,10 +7,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#222222",
+        dark: "#080B1C",
+        dark1: "#0C1023",
+
         white: "#FFFFFF",
         description: "#BBBBBB",
-        underline: "#3C3C3C",
+        gray: "#BBBBBB",
+        stroke: "#3C3C3C",
+        stroke2: "#767676",
+
+        blue: {
+          main: "#59A5FF",
+          stroke: "#59A5FF",
+          text: "#61A4FF"
+        },
+
+        purple: {
+          main: "#7847FF",
+          stroke: "#7847FF",
+          text: "#9670FF"
+        },
+
+        pink: {
+          main: "#CAB8FF",
+          stroke: "#CAB8FF",
+          text: "#CAB8FF"
+        }
       },
       keyframes: {
         flicker: {

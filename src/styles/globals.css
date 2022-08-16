@@ -14,6 +14,10 @@ html {
   font-family: "Krona One", sans-serif;
 }
 
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
 .animated-gradient-text {
   color: transparent;
   background: linear-gradient(
