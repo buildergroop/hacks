@@ -61,7 +61,7 @@ export const FAQSection = () => {
         heading: "Is there a theme?",
         content: (
           <>
-            The theme for this hackathon is to create a live application using
+            The theme for this hackathon is to create a realtime application using
             Hop's services. If you decide to register for the hackathon, you'll
             be able to onboard yourself to Hop free of charge and use it to help
             build your project. Aside from that prerequisite, there are no
